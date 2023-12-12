@@ -1,4 +1,7 @@
-﻿using Tabuleiro;
+﻿using ChessGame.Tabuleiro;
+using ChessGame.Tabuleiro.Enums;
+using Tabuleiro;
+
 
 namespace ChessGame
 {
@@ -6,10 +9,9 @@ namespace ChessGame
     {
         static void Main(string[] args)
         {
-            Posicao P;
+            TabuleiroF tab = new TabuleiroF(8,8);
 
-            P = new Posicao(3, 4);
-            Console.WriteLine("Posicao "+ P);
+            Console.ReadLine();
 
         }
     }
