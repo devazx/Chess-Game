@@ -11,6 +11,8 @@ namespace ChessGame
         {
             TabuleiroF tab = new TabuleiroF(8,8);
 
+            Tela.imprimirTabuleiro(tab);
+
             Console.ReadLine();
 
         }
