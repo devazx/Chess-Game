@@ -1,7 +1,7 @@
-﻿using ChessGame.Tabuleiro.Enums;
+﻿using Tabuleiro.Enums;
 using Tabuleiro;
 
-namespace ChessGame.Tabuleiro
+namespace Tabuleiro
 {
     class Peca
     {
@@ -10,9 +10,9 @@ namespace ChessGame.Tabuleiro
         public int qtdMove { get; protected set; }
         public TabuleiroF Tab { get; set; }
 
-        public Peca(Posicao posicao, Cor cor, TabuleiroF tab)
+        public Peca(TabuleiroF tab, Cor cor)
         {
-            Posicao = posicao;
+            Posicao = null;
             Cor = cor;
             Tab = tab;
             this.qtdMove = 0;

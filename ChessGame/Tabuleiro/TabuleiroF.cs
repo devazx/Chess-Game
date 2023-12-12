@@ -1,4 +1,4 @@
-﻿using ChessGame.Tabuleiro;
+﻿using Tabuleiro;
 
 namespace Tabuleiro
 {
@@ -18,6 +18,12 @@ namespace Tabuleiro
         public Peca Peca (int linha, int colunas)
         {
             return pecas[linha, colunas];
+        }
+
+        public void colocarPeca(Peca p, Posicao pos)
+        {
+            pecas[pos.Linha,pos.Coluna] = p;
+            p.Posicao = pos;
         }
     }
 }
