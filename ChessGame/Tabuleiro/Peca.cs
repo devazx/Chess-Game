@@ -16,6 +16,6 @@ namespace Tabuleiro
             Cor = cor;
             Tab = tab;
             this.qtdMove = 0;
-        }
+        } 
     }
 }
