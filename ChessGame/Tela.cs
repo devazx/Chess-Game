@@ -1,6 +1,7 @@
 ﻿using System;
 using Tabuleiro;
 using Tabuleiro.Enums;
+using Chess;
 
 namespace ChessGame
 {
@@ -29,11 +30,19 @@ namespace ChessGame
             Console.WriteLine("  a b c d e f g h");
         }
 
+        public static PosicaoChess lerPosicaoXadrez()
+        {
+            string s = Console.ReadLine();
+            char coluna = s[0];
+            int linha = int.Parse(s[1] + "");
+            return new PosicaoChess(coluna, linha);
+        }
+
         public static void imprimirPeca(Peca peca)
         {
             if (peca.Cor == Cor.Branca)
             {
-                Console.WriteLine(peca);
+                Console.Write(peca);
             }
             else
             {

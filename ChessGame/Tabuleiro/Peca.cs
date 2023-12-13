@@ -17,5 +17,11 @@ namespace Tabuleiro
             Tab = tab;
             this.qtdMove = 0;
         } 
+
+        public void IncremetarQteMovimentos()
+        {
+            qtdMove ++;
+        }
     }
 }
+
