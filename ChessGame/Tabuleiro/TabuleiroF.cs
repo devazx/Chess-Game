@@ -23,6 +23,7 @@ namespace Tabuleiro
 
         public Peca peca(Posicao pos)
         {
+            
             return pecas[pos.Linha, pos.Coluna];
         }
 
