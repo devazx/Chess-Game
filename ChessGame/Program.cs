@@ -20,10 +20,7 @@ namespace ChessGame
                     try
                     {
                         Console.Clear();
-                        Tela.imprimirTabuleiro(partida.tab);
-                        Console.WriteLine();
-                        Console.WriteLine("Turno: " + partida.Turno);
-                        Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+                        Tela.imprimirPartida(partida);
 
                         Console.WriteLine();
                         Console.Write("Origem: ");
@@ -41,12 +38,12 @@ namespace ChessGame
 
                         partida.validarPosicaoDeDestino(origem, destino);
 
-                        partida.executaMovimento(origem, destino);
+                        partida.realizaJogada(origem, destino);
                     }
                     catch(TabuleiroException e)  
                     {
                         Console.WriteLine(e.Message);
-                        Console.ReadLine();
+                        Console.ReadLine(); 
                     }
                 }                
             } 
