@@ -33,7 +33,7 @@ namespace Chess
             while (Tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.Linha, pos.Coluna] = true;
-                if (Tab.peca(pos) == null && Tab.peca(pos).Cor != Cor)
+                if (Tab.peca(pos) != null && Tab.peca(pos).Cor != Cor)
                 {
                     break;
                 }
